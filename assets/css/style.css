@@ -1,0 +1,353 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --blue: #029297;
+  --darkblue: #01494b;
+  --lightblue: #68f8fd;
+  --white: #fff;
+  --black: #000;
+  --gray: #808080;
+}
+
+body {
+  background-color: pink;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Utilities */
+.w-100 {
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 25px 125px;
+  background-color: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 3px 5px -4px var(--black);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo p {
+  font-weight: 600;
+  font-size: 1.5em;
+  color: var(--lightblue);
+  padding-left: 5px;
+}
+
+.logo p span {
+  font-weight: 100;
+  color: var(--white);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  font-size: 1.2em;
+}
+
+nav ul li a {
+  text-decoration: none;
+  transition: 1s;
+  color: var(--white);
+}
+
+nav ul li a:hover {
+  color: var(--blue);
+}
+
+/* Banner Styles */
+section.banner {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--blue);
+  padding: 0 25px;
+  background-image: url(https://framerusercontent.com/images/Ke7NpmARiH0kaSh2nahFbVZoj0.png);
+  background-position-x: right;
+  height: 100vh;
+  background-size: 520px;
+  background-repeat: no-repeat;
+}
+
+section.banner .content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 0;
+  max-width: 50%;
+}
+
+section.banner .content h1 {
+  color: var(--lightblue);
+  font-size: 3em;
+}
+
+section.banner .content p {
+  color: var(--white);
+  padding: 40px 0;
+}
+
+section.banner .content div {
+  display: flex;
+  gap: 10px;
+}
+
+section.banner .content button {
+  border: none;
+  outline: none;
+  width: 280px;
+  padding: 16px 0;
+  font-size: 1.2em;
+  font-weight: 600;
+  border-radius: 3px;
+}
+
+section.banner .content button:nth-child(1) {
+  color: var(--white);
+  background-color: var(--darkblue);
+}
+
+section.banner .content button:nth-child(2) {
+  color: var(--darkblue);
+}
+
+/* About Section Styles */
+section.about {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--white);
+  padding: 85px 25px;
+  justify-content: space-between;
+}
+
+section.about .imgBox {
+  position: relative;
+  width: 500px;
+  height: 428px;
+  flex: 1;
+  margin-right: 50px;
+}
+
+section.about .imgBox .loc {
+  position: absolute;
+  bottom: -30px;
+  right: 62px;
+  background: aliceblue;
+  padding: 18px;
+}
+
+section.about .imgBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section.about .content {
+  flex: 1;
+  max-width: 660px;
+}
+
+.heading {
+  color: var(--blue);
+  font-size: 1em;
+}
+
+.content h1 {
+  color: var(--darkblue);
+  padding: 25px 0;
+  font-size: 2em;
+}
+
+.content p {
+  color: var(--gray);
+  font-size: 1.5em;
+}
+
+button.btn {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  font-weight: 100;
+  background-color: var(--white);
+  color: var(--darkblue);
+  box-shadow: 0px 0px 38px -15px var(--black);
+  border-radius: 3px;
+}
+
+section.about .content .achivements {
+  display: flex;
+  gap: 30px;
+  padding: 25px 0px;
+}
+
+section.about .content .achivements .box {
+  max-width: 270px;
+}
+
+section.about .content .achivements .box h3 {
+  color: var(--darkblue);
+  padding: 25px 0;
+}
+
+section.about .content .achivements .box p {
+  color: var(--gray);
+  font-size: 0.9em;
+}
+
+section.about .content .achivements .box .iconBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  padding: 10px;
+  background-color: #f5ffff;
+}
+
+/* Teams Section Styles */
+section.meetus {
+  background-color: #f5ffff;
+  padding: 85px 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section.meetus .content {
+  max-width: 768px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+section.meetus .teams {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+}
+
+section.meetus .teams .box h3,
+section.meetus .teams .box p {
+  text-align: center;
+  padding-top: 10px;
+}
+
+section.meetus .teams .box h3 {
+  color: var(--darkblue);
+}
+
+section.meetus .teams .box p {
+  color: var(--gray);
+}
+
+section.meetus .teams .box .socialIcons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  padding-top: 12px;
+}
+
+section.meetus .teams .box .socialIcons .icon {
+  width: 40px;
+  height: 40px;
+  background: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid transparent;
+  padding: 6px;
+  border-radius: 3px;
+  transition: all 1s;
+  box-shadow: 0px 0px 49px -14px var(--black);
+}
+
+section.meetus .teams .box .socialIcons .icon:hover {
+  border-color: var(--blue);
+}
+
+section.meetus .teams .box .wrapper:hover img {
+  transform: scale(1.1);
+}
+
+section.meetus .teams .box .wrapper {
+  width: 250px;
+  height: 370px;
+  border-bottom-left-radius: 480px;
+  border-bottom-right-radius: 480px;
+  position: relative;
+  overflow: hidden;
+}
+
+section.meetus .teams .box .wrapper .imgBox {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: #e6e6e6;
+  position: absolute;
+  bottom: 0;
+}
+
+section.meetus .teams .box .wrapper .imgBox img {
+  position: absolute;
+  bottom: 0px;
+  transition: all 0.5s;
+}
+
+/* Services Section Styles */
+section.services {
+  padding: 85px 25px;
+  background-color: var(--white);
+  gap: 25px;
+}
+
+section.services .content {
+  max-width: 700px;
+}
+
+section.services .inner-content {
+  display: flex;
+  gap: 25px;
+}
+
+section.services .treatments .box {
+  padding: 20px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: var(--darkblue);
+  color: var(--white);
+  text-align: center;
+  padding: 20px 0;
+}
+
+@media screen and (min-width: 768px) {
+  section.meetus .teams {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo in circle</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        #main {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .wrapper {
+            /* background-color: aqua; */
+            width: 280px;
+            height: 400px;
+            margin: 100px auto;
+            border-bottom-left-radius: 480px;
+            border-bottom-right-radius: 480px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .image-wrapper {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            background-color: #E6E6E6;
+            position: absolute;
+            bottom: 0;
+        }
+
+        img {
+            width: 290px;
+            position: absolute;
+            bottom: 0px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="main">
+
+        <div class="wrapper">
+            <div class="image-wrapper">
+                <img src="https://framerusercontent.com/images/Y3OSPpEWRPiT62v3yBM4EoGbvcg.png" alt="">
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
