@@ -381,3 +381,10 @@ footer {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+@media screen and (min-width: 1701px) {
+    .banner {
+        background-size: 605px;
+        margin-top: 80px;
+    }
+}
